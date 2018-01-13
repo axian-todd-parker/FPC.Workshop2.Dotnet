@@ -49,6 +49,7 @@ namespace WebApp.Controllers
 
         public ActionResult UploadFile(HttpPostedFileBase file)
         {
+            // this is a comment
             // Read bytes from http input stream
             BinaryReader binaryReader = new BinaryReader(file.InputStream);
             byte[] binaryData = binaryReader.ReadBytes(file.ContentLength);
